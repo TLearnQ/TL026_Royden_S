@@ -1,0 +1,101 @@
+[
+    {
+        "title": "NSCE_SliceInfo",
+        "version": "1.1.0-alpha.1",
+        "description": "API for notification of slice information.  \n\u00c2\u00a9 2025, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI, TTA, TTC).  \nAll rights reserved.\n",
+        "url": "{apiRoot}/nsce_sliceinfo/v1",
+        "variables": {
+            "apiRoot": {
+                "default": "https://example.com",
+                "description": "apiRoot as defined in clause 5.2.4 of 3GPP TS 29.122."
+            }
+        }
+    },
+    {
+        "path": "/edn-slice-subscriptions",
+        "method": "POST",
+        "tags": null,
+        "responses": {
+            "default": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/default"
+            }
+        }
+    },
+    {
+        "path": "/plmn-slice-subscriptions",
+        "method": "POST",
+        "tags": null,
+        "responses": {
+            "default": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/default"
+            }
+        }
+    },
+    {
+        "path": "/ns-info-subscriptions",
+        "method": "POST",
+        "tags": null,
+        "responses": {
+            "default": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/default"
+            }
+        }
+    },
+    {
+        "schema_name": "NSInfoDel",
+        "schema_details": {
+            "description": "Represents the network slice information delivery.",
+            "type": "object",
+            "properties": {
+                "valServId": {
+                    "type": "string"
+                },
+                "tgtNsceServId": {
+                    "type": "string"
+                },
+                "tgtNsceAddr": {
+                    "$ref": "TS29558_Eees_EASRegistration.yaml#/components/schemas/EndPoint"
+                },
+                "valUeIds": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1,
+                    "description": "Represents the list of VAL UEs ID."
+                },
+                "nSInfos": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/components/schemas/NSInfo"
+                    },
+                    "minItems": 1
+                }
+            },
+            "required": [
+                "valServId",
+                "tgtNsceServId",
+                "tgtNsceAddr",
+                "nSInfos"
+            ]
+        }
+    },
+    {
+        "schema_name": "NSInfo",
+        "schema_details": {
+            "description": "Represents the network slice information.",
+            "type": "object",
+            "properties": {
+                "netSliceId": {
+                    "$ref": "TS29435_NSCE_PolicyManagement.yaml#/components/schemas/NetSliceId"
+                },
+                "dnn": {
+                    "$ref": "TS29571_CommonData.yaml#/components/schemas/Dnn"
+                }
+            },
+            "required": [
+                "netSliceId"
+            ]
+        }
+    }
+]

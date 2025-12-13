@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Maf_SessionHandling (Real-Time media Communication)",
+        "version": "1.1.0",
+        "description": "RTC AF Provisioning API\n\u00c2\u00a9 2025, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI, TTA, TTC).\nAll rights reserved.\n",
+        "url": "{apiRoot}/3gpp-maf-session-handling/v1",
+        "variables": {
+            "apiRoot": {
+                "default": "https://example.com",
+                "description": "See 3GPP TS 29.510 clause 9."
+            }
+        }
+    }
+]

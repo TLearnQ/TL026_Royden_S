@@ -1,0 +1,59 @@
+{
+  "http_method_count": {
+    "POST": 2
+  },
+  "endpoints_with_responses": 2,
+  "endpoints_without_responses": 0,
+  "authentication_methods": [
+    "AimlesTaskTransferAssistReq",
+    "AimlesTaskTransferAssistResp",
+    "AimlesControlledTaskTransferReq",
+    "AimlesControlledTaskTransferResp",
+    "AimlRmngTrainingReq",
+    "AimlIntermediateInfo",
+    "TransferMode"
+  ],
+  "request_response_map": [
+    {
+      "path": "/assist-tt",
+      "method": "POST",
+      "responses": [
+        "200",
+        "307",
+        "308",
+        "400",
+        "401",
+        "403",
+        "404",
+        "411",
+        "413",
+        "415",
+        "429",
+        "500",
+        "503",
+        "default"
+      ]
+    },
+    {
+      "path": "/request-ctld",
+      "method": "POST",
+      "responses": [
+        "200",
+        "307",
+        "308",
+        "400",
+        "401",
+        "403",
+        "404",
+        "411",
+        "413",
+        "415",
+        "429",
+        "500",
+        "503",
+        "default"
+      ]
+    }
+  ],
+  "total_endpoints": 2
+}

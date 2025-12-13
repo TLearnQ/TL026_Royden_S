@@ -1,0 +1,52 @@
+2025-12-13 13:16:49,048 | INFO | Starting OpenAPI parsing
+2025-12-13 13:16:49,060 | INFO | Extracted endpoint: POST /edn-slice-subscriptions
+2025-12-13 13:16:49,060 | INFO | Extracted endpoint: POST /plmn-slice-subscriptions
+2025-12-13 13:16:49,060 | INFO | Extracted endpoint: POST /ns-info-subscriptions
+2025-12-13 13:17:53,409 | INFO | Starting OpenAPI parsing
+2025-12-13 13:17:53,420 | INFO | Extracted endpoint: POST /edn-slice-subscriptions
+2025-12-13 13:17:53,420 | INFO | Extracted endpoint: POST /plmn-slice-subscriptions
+2025-12-13 13:17:53,420 | INFO | Extracted endpoint: POST /ns-info-subscriptions
+2025-12-13 13:17:53,421 | INFO | Metadata JSON saved successfully
+2025-12-13 13:17:53,421 | INFO | Generating summary file
+2025-12-13 13:19:15,428 | INFO | Starting OpenAPI parsing
+2025-12-13 13:19:15,438 | INFO | Extracted endpoint: POST /edn-slice-subscriptions
+2025-12-13 13:19:15,438 | INFO | Extracted endpoint: POST /plmn-slice-subscriptions
+2025-12-13 13:19:15,438 | INFO | Extracted endpoint: POST /ns-info-subscriptions
+2025-12-13 13:19:15,439 | INFO | Metadata JSON saved successfully
+2025-12-13 13:19:15,439 | INFO | Generating summary file
+2025-12-13 13:27:30,838 | INFO | Starting OpenAPI parsing
+2025-12-13 13:27:30,839 | ERROR | YAML file not found
+2025-12-13 13:27:47,994 | INFO | Starting OpenAPI parsing
+2025-12-13 13:27:48,006 | INFO | Extracted endpoint: POST /edn-slice-subscriptions
+2025-12-13 13:27:48,006 | INFO | Extracted endpoint: POST /plmn-slice-subscriptions
+2025-12-13 13:27:48,006 | INFO | Extracted endpoint: POST /ns-info-subscriptions
+2025-12-13 13:27:48,007 | INFO | Metadata JSON saved successfully
+2025-12-13 13:27:48,007 | INFO | Generating summary file
+2025-12-13 13:28:16,633 | INFO | Starting OpenAPI parsing
+2025-12-13 13:28:16,651 | INFO | Extracted endpoint: POST /subscriptions
+2025-12-13 13:28:16,651 | INFO | Extracted endpoint: PUT /subscriptions/{subscriptionId}
+2025-12-13 13:28:16,651 | INFO | Extracted endpoint: DELETE /subscriptions/{subscriptionId}
+2025-12-13 13:28:16,651 | INFO | Extracted endpoint: PATCH /subscriptions/{subscriptionId}
+2025-12-13 13:28:16,654 | INFO | Metadata JSON saved successfully
+2025-12-13 13:28:16,654 | INFO | Generating summary file
+2025-12-13 13:28:39,363 | INFO | Starting OpenAPI parsing
+2025-12-13 13:28:39,366 | INFO | Metadata JSON saved successfully
+2025-12-13 13:28:39,366 | INFO | Generating summary file
+2025-12-13 13:28:57,708 | INFO | Starting OpenAPI parsing
+2025-12-13 13:28:57,719 | INFO | Extracted endpoint: POST /assist-tt
+2025-12-13 13:28:57,719 | INFO | Extracted endpoint: POST /request-ctld
+2025-12-13 13:28:57,721 | INFO | Metadata JSON saved successfully
+2025-12-13 13:28:57,721 | INFO | Generating summary file
+2025-12-13 13:30:20,555 | INFO | Starting OpenAPI parsing
+2025-12-13 13:30:20,589 | INFO | Extracted endpoint: POST /application-performance
+2025-12-13 13:30:20,590 | INFO | Extracted endpoint: DELETE /application-performance/{appPerfId}
+2025-12-13 13:30:20,590 | INFO | Extracted endpoint: POST /ue2ue-session-performance/fetch
+2025-12-13 13:30:20,590 | INFO | Extracted endpoint: POST /edge-load
+2025-12-13 13:30:20,590 | INFO | Extracted endpoint: DELETE /edge-load/{edgeLdId}
+2025-12-13 13:30:20,590 | INFO | Extracted endpoint: POST /service-experience/pull
+2025-12-13 13:30:20,590 | INFO | Extracted endpoint: POST /collision-detection
+2025-12-13 13:30:20,590 | INFO | Extracted endpoint: DELETE /collision-detection/{collisionDetectionId}
+2025-12-13 13:30:20,590 | INFO | Extracted endpoint: POST /ue-group-loc-analytics
+2025-12-13 13:30:20,590 | INFO | Extracted endpoint: DELETE /ue-group-loc-analytics/{ueGroupLocId}
+2025-12-13 13:30:20,593 | INFO | Metadata JSON saved successfully
+2025-12-13 13:30:20,593 | INFO | Generating summary file

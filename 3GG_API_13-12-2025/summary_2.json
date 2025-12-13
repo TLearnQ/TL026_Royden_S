@@ -1,0 +1,99 @@
+{
+  "http_method_count": {
+    "POST": 1,
+    "PUT": 1,
+    "DELETE": 1,
+    "PATCH": 1
+  },
+  "endpoints_with_responses": 4,
+  "endpoints_without_responses": 0,
+  "authentication_methods": [
+    "ACREventsSubscription",
+    "ACRInfoNotification",
+    "TargetInfo",
+    "ACREventsSubscriptionPatch",
+    "ACREventIDs",
+    "EecCtxtRelocStatus",
+    "ACRCompleteEventInfo"
+  ],
+  "request_response_map": [
+    {
+      "path": "/subscriptions",
+      "method": "POST",
+      "responses": [
+        "201",
+        "400",
+        "401",
+        "403",
+        "404",
+        "411",
+        "413",
+        "415",
+        "429",
+        "500",
+        "503",
+        "default"
+      ]
+    },
+    {
+      "path": "/subscriptions/{subscriptionId}",
+      "method": "PUT",
+      "responses": [
+        "200",
+        "204",
+        "307",
+        "308",
+        "400",
+        "401",
+        "403",
+        "404",
+        "411",
+        "413",
+        "415",
+        "429",
+        "500",
+        "503",
+        "default"
+      ]
+    },
+    {
+      "path": "/subscriptions/{subscriptionId}",
+      "method": "DELETE",
+      "responses": [
+        "204",
+        "307",
+        "308",
+        "400",
+        "401",
+        "403",
+        "404",
+        "429",
+        "500",
+        "503",
+        "default"
+      ]
+    },
+    {
+      "path": "/subscriptions/{subscriptionId}",
+      "method": "PATCH",
+      "responses": [
+        "200",
+        "204",
+        "307",
+        "308",
+        "400",
+        "401",
+        "403",
+        "404",
+        "411",
+        "413",
+        "415",
+        "429",
+        "500",
+        "503",
+        "default"
+      ]
+    }
+  ],
+  "total_endpoints": 4
+}

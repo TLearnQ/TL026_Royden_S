@@ -1,0 +1,35 @@
+{
+  "http_method_count": {
+    "POST": 3
+  },
+  "endpoints_with_responses": 3,
+  "endpoints_without_responses": 0,
+  "authentication_methods": [
+    "NSInfoDel",
+    "NSInfo"
+  ],
+  "request_response_map": [
+    {
+      "path": "/edn-slice-subscriptions",
+      "method": "POST",
+      "responses": [
+        "default"
+      ]
+    },
+    {
+      "path": "/plmn-slice-subscriptions",
+      "method": "POST",
+      "responses": [
+        "default"
+      ]
+    },
+    {
+      "path": "/ns-info-subscriptions",
+      "method": "POST",
+      "responses": [
+        "default"
+      ]
+    }
+  ],
+  "total_endpoints": 3
+}

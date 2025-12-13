@@ -1,0 +1,445 @@
+[
+    {
+        "title": "Eees_ACREvents",
+        "version": "1.2.0-alpha.2",
+        "description": "API for ACR events subscription and notification.  \n\u00c2\u00a9 2025, 3GPP Organizational Partners (ARIB, ATIS, CCSA, ETSI, TSDSI, TTA, TTC).  \nAll rights reserved.\n",
+        "url": "{apiRoot}/eees-acrevents/v1",
+        "variables": {
+            "apiRoot": {
+                "default": "https://example.com",
+                "description": "apiRoot as defined in clause 7.5 of 3GPP TS 29.558"
+            }
+        }
+    },
+    {
+        "path": "/subscriptions",
+        "method": "POST",
+        "tags": [
+            "ACR events subscription (Collection)"
+        ],
+        "responses": {
+            "201": {
+                "description": "Individual ACR events subscription resource created successfully.",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "#/components/schemas/ACREventsSubscription"
+                        }
+                    }
+                },
+                "headers": {
+                    "Location": {
+                        "description": "Contains the URI of the newly created resource.",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "400": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/400"
+            },
+            "401": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/401"
+            },
+            "403": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/403"
+            },
+            "404": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/404"
+            },
+            "411": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/411"
+            },
+            "413": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/413"
+            },
+            "415": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/415"
+            },
+            "429": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/429"
+            },
+            "500": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/500"
+            },
+            "503": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/503"
+            },
+            "default": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/default"
+            }
+        }
+    },
+    {
+        "path": "/subscriptions/{subscriptionId}",
+        "method": "PUT",
+        "tags": [
+            "Individual ACR Events Subscription"
+        ],
+        "responses": {
+            "200": {
+                "description": "OK (An individual ACR Events subscription resource updated successfully).\n",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "#/components/schemas/ACREventsSubscription"
+                        }
+                    }
+                }
+            },
+            "204": {
+                "description": "No Content (updated successfully)."
+            },
+            "307": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/307"
+            },
+            "308": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/308"
+            },
+            "400": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/400"
+            },
+            "401": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/401"
+            },
+            "403": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/403"
+            },
+            "404": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/404"
+            },
+            "411": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/411"
+            },
+            "413": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/413"
+            },
+            "415": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/415"
+            },
+            "429": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/429"
+            },
+            "500": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/500"
+            },
+            "503": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/503"
+            },
+            "default": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/default"
+            }
+        }
+    },
+    {
+        "path": "/subscriptions/{subscriptionId}",
+        "method": "DELETE",
+        "tags": [
+            "Individual ACR Events Subscription"
+        ],
+        "responses": {
+            "204": {
+                "description": "An individual ACR Events subscription resource deleted successfully."
+            },
+            "307": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/307"
+            },
+            "308": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/308"
+            },
+            "400": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/400"
+            },
+            "401": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/401"
+            },
+            "403": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/403"
+            },
+            "404": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/404"
+            },
+            "429": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/429"
+            },
+            "500": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/500"
+            },
+            "503": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/503"
+            },
+            "default": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/default"
+            }
+        }
+    },
+    {
+        "path": "/subscriptions/{subscriptionId}",
+        "method": "PATCH",
+        "tags": [
+            "Individual ACR Events Subscription"
+        ],
+        "responses": {
+            "200": {
+                "description": "OK (An individual ACR Events subscription resource updated successfully).\n",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "#/components/schemas/ACREventsSubscription"
+                        }
+                    }
+                }
+            },
+            "204": {
+                "description": "No Content (successful notification)."
+            },
+            "307": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/307"
+            },
+            "308": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/308"
+            },
+            "400": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/400"
+            },
+            "401": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/401"
+            },
+            "403": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/403"
+            },
+            "404": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/404"
+            },
+            "411": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/411"
+            },
+            "413": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/413"
+            },
+            "415": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/415"
+            },
+            "429": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/429"
+            },
+            "500": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/500"
+            },
+            "503": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/503"
+            },
+            "default": {
+                "$ref": "TS29122_CommonData.yaml#/components/responses/default"
+            }
+        }
+    },
+    {
+        "schema_name": "ACREventsSubscription",
+        "schema_details": {
+            "description": "ACE Events subscription request.",
+            "type": "object",
+            "properties": {
+                "eecId": {
+                    "type": "string",
+                    "description": "Represents a unique identifier of the EEC."
+                },
+                "ueId": {
+                    "$ref": "TS29571_CommonData.yaml#/components/schemas/Gpsi"
+                },
+                "expTime": {
+                    "$ref": "TS29122_CommonData.yaml#/components/schemas/DateTime"
+                },
+                "easIds": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1,
+                    "description": "The list of application identifiers of the EASs."
+                },
+                "acIds": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "List of AC identities."
+                },
+                "eventIds": {
+                    "$ref": "#/components/schemas/ACREventIDs"
+                },
+                "notificationDestination": {
+                    "$ref": "TS29122_CommonData.yaml#/components/schemas/Uri"
+                },
+                "requestTestNotification": {
+                    "type": "boolean",
+                    "description": "Set to true by Subscriber to request the ECS to send a test notification. Set to false or omitted otherwise.\n"
+                },
+                "websockNotifConfig": {
+                    "$ref": "TS29122_CommonData.yaml#/components/schemas/WebsockNotifConfig"
+                },
+                "suppFeat": {
+                    "$ref": "TS29571_CommonData.yaml#/components/schemas/SupportedFeatures"
+                }
+            },
+            "required": [
+                "eecId",
+                "easIds",
+                "eventIds",
+                "notificationDestination"
+            ]
+        }
+    },
+    {
+        "schema_name": "ACRInfoNotification",
+        "schema_details": {
+            "description": "Notification of ACR events information.",
+            "type": "object",
+            "properties": {
+                "subId": {
+                    "type": "string",
+                    "description": "String identifying the Individual ACR events subscription for which the ACT Information notification is delivered.\n"
+                },
+                "easId": {
+                    "type": "string",
+                    "description": "Application identifier of the EAS."
+                },
+                "acId": {
+                    "type": "string",
+                    "description": "Identity of the AC."
+                },
+                "eventId": {
+                    "$ref": "#/components/schemas/ACREventIDs"
+                },
+                "trgtInfo": {
+                    "$ref": "#/components/schemas/TargetInfo"
+                },
+                "acrStatus": {
+                    "$ref": "#/components/schemas/ACRCompleteEventInfo"
+                },
+                "eecCtxtReloc": {
+                    "$ref": "#/components/schemas/EecCtxtRelocStatus"
+                },
+                "acrScenarioList": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "TS29558_Eecs_EESRegistration.yaml#/components/schemas/ACRScenario"
+                    }
+                },
+                "easBundleInfo": {
+                    "$ref": "TS29558_Eees_EASRegistration.yaml#/components/schemas/EASBundleInfo"
+                },
+                "tEasEndPointBundleList": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "TS29558_Eees_EASRegistration.yaml#/components/schemas/EndPoint"
+                    },
+                    "minItems": 1
+                }
+            },
+            "required": [
+                "subId",
+                "easId",
+                "eventId"
+            ]
+        }
+    },
+    {
+        "schema_name": "TargetInfo",
+        "schema_details": {
+            "description": "Details of the selected T-EAS and the T-EES. The trgetEASInfo attribute shall be present, although they are not specified as a mandatory due to backward compatibility reasons.\n",
+            "type": "object",
+            "properties": {
+                "trgetEASInfo": {
+                    "$ref": "TS24558_Eees_EASDiscovery.yaml#/components/schemas/DiscoveredEas"
+                },
+                "trgetEESInfo": {
+                    "$ref": "TS24558_Eecs_ServiceProvisioning.yaml#/components/schemas/EDNConfigInfo"
+                }
+            }
+        }
+    },
+    {
+        "schema_name": "ACREventsSubscriptionPatch",
+        "schema_details": {
+            "description": "An individual ACR events subscription resource to be updated.",
+            "type": "object",
+            "properties": {
+                "expTime": {
+                    "$ref": "TS29122_CommonData.yaml#/components/schemas/DateTime"
+                },
+                "easIds": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1,
+                    "description": "The list of application identifiers of the EASs."
+                },
+                "eventIds": {
+                    "$ref": "#/components/schemas/ACREventIDs"
+                },
+                "notificationDestination": {
+                    "$ref": "TS29122_CommonData.yaml#/components/schemas/Uri"
+                }
+            }
+        }
+    },
+    {
+        "schema_name": "ACREventIDs",
+        "schema_details": {
+            "anyOf": [
+                {
+                    "type": "string",
+                    "enum": [
+                        "TARGET_INFORMATION",
+                        "ACR_COMPLETE"
+                    ]
+                },
+                {
+                    "type": "string",
+                    "description": "This string provides forward-compatibility with future extensions to the enumeration and is not used to encode content defined in the present version of this API.\n"
+                }
+            ],
+            "description": "Represents the ACR events.  \nPossible values are:\n- TARGET_INFORMATION: Represents the target information event.\n- ACR_COMPLETE: Represents the ACR complete event.\n"
+        }
+    },
+    {
+        "schema_name": "EecCtxtRelocStatus",
+        "schema_details": {
+            "description": "Indicates the registration id and expiry time of the registration.",
+            "type": "object",
+            "properties": {
+                "implReg": {
+                    "$ref": "TS29558_Eees_EECContextRelocation.yaml#/components/schemas/ImplicitRegDetails"
+                }
+            }
+        }
+    },
+    {
+        "schema_name": "ACRCompleteEventInfo",
+        "schema_details": {
+            "description": "Indicates the completed ACR result and target EAS endpoint info.",
+            "type": "object",
+            "properties": {
+                "acrRes": {
+                    "type": "boolean",
+                    "description": "Indicates whether the ACR is successful or failure."
+                },
+                "tEasEndpoint": {
+                    "$ref": "TS29558_Eees_EASRegistration.yaml#/components/schemas/EndPoint"
+                },
+                "failReason": {
+                    "type": "string",
+                    "description": "Indicates the cause information for the failure."
+                }
+            },
+            "required": [
+                "acrRes",
+                "tEasEndpoint"
+            ]
+        }
+    }
+]

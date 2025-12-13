@@ -1,0 +1,199 @@
+{
+  "http_method_count": {
+    "POST": 6,
+    "DELETE": 4
+  },
+  "endpoints_with_responses": 10,
+  "endpoints_without_responses": 0,
+  "authentication_methods": [
+    "Ue2UePerfReq",
+    "Ue2UePerfResp",
+    "Ue2UeRepThreshold",
+    "DataCollectReq",
+    "PullSrvExpInfo",
+    "SrvExpInfoRep"
+  ],
+  "request_response_map": [
+    {
+      "path": "/application-performance",
+      "method": "POST",
+      "responses": [
+        "201",
+        "400",
+        "401",
+        "403",
+        "404",
+        "411",
+        "413",
+        "415",
+        "429",
+        "500",
+        "503",
+        "default"
+      ]
+    },
+    {
+      "path": "/application-performance/{appPerfId}",
+      "method": "DELETE",
+      "responses": [
+        "204",
+        "307",
+        "308",
+        "400",
+        "401",
+        "403",
+        "404",
+        "429",
+        "500",
+        "503",
+        "default"
+      ]
+    },
+    {
+      "path": "/ue2ue-session-performance/fetch",
+      "method": "POST",
+      "responses": [
+        "200",
+        "307",
+        "308",
+        "400",
+        "401",
+        "403",
+        "404",
+        "411",
+        "413",
+        "415",
+        "429",
+        "500",
+        "503",
+        "default"
+      ]
+    },
+    {
+      "path": "/edge-load",
+      "method": "POST",
+      "responses": [
+        "201",
+        "400",
+        "401",
+        "403",
+        "404",
+        "411",
+        "413",
+        "415",
+        "429",
+        "500",
+        "503",
+        "default"
+      ]
+    },
+    {
+      "path": "/edge-load/{edgeLdId}",
+      "method": "DELETE",
+      "responses": [
+        "204",
+        "307",
+        "308",
+        "400",
+        "401",
+        "403",
+        "404",
+        "429",
+        "500",
+        "503",
+        "default"
+      ]
+    },
+    {
+      "path": "/service-experience/pull",
+      "method": "POST",
+      "responses": [
+        "200",
+        "307",
+        "308",
+        "400",
+        "401",
+        "403",
+        "404",
+        "411",
+        "413",
+        "415",
+        "429",
+        "500",
+        "503",
+        "default"
+      ]
+    },
+    {
+      "path": "/collision-detection",
+      "method": "POST",
+      "responses": [
+        "201",
+        "400",
+        "401",
+        "403",
+        "404",
+        "411",
+        "413",
+        "415",
+        "429",
+        "500",
+        "503",
+        "default"
+      ]
+    },
+    {
+      "path": "/collision-detection/{collisionDetectionId}",
+      "method": "DELETE",
+      "responses": [
+        "204",
+        "307",
+        "308",
+        "400",
+        "401",
+        "403",
+        "404",
+        "429",
+        "500",
+        "503",
+        "default"
+      ]
+    },
+    {
+      "path": "/ue-group-loc-analytics",
+      "method": "POST",
+      "responses": [
+        "201",
+        "400",
+        "401",
+        "403",
+        "404",
+        "411",
+        "413",
+        "415",
+        "429",
+        "500",
+        "503",
+        "default"
+      ]
+    },
+    {
+      "path": "/ue-group-loc-analytics/{ueGroupLocId}",
+      "method": "DELETE",
+      "responses": [
+        "204",
+        "307",
+        "308",
+        "400",
+        "401",
+        "403",
+        "404",
+        "429",
+        "500",
+        "503",
+        "default"
+      ]
+    }
+  ],
+  "total_endpoints": 10
+}
